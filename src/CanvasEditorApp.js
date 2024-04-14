@@ -76,40 +76,38 @@ const CanvasEditorApp = () => {
     setLastPickedColors(canvasEditorRef.current.lastPickedColors);
   };
   return (
-    <div className="container mx-auto p-4 flex justify-center items-center">
-    <center><h1>Canvas Editor</h1></center>
-      <div className="flex flex-col mr-4">
-        <div className="mb-4">
-          <label htmlFor="imageUpload" className="block mb-2">Upload Image : </label>
-          <input type="file" id="imageUpload" accept="image/*" onChange={handleImageUpload} className="hidden" />
-          {/* <label htmlFor="imageUpload" className="cursor-pointer bg-blue-500 text-white rounded px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-600 mb-4">Upload Image</label> */}
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Caption</span>
-          <input type="text" id="caption" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value={caption} onChange={handleCaptionChange}/>
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default">Call to Action</span>
-          <input type="text" id="callToAction" value={callToAction} onChange={handleCallToActionChange} class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-        </div>
-        <div><center>
-          <label htmlFor="backgroundColor" className="block mb-2">Background Color :  </label>
-          <input type="color" id="backgroundColor" value={backgroundColor} onChange={handleBackgroundColorChange} className="border rounded p-2" />
-        </center></div>
-        {/* Last picked colors */}
-        <div className="mt-4 mr-4">
-          <h4>Last Picked Colors:</h4>
-          <div className="flex mt-2">
-            {lastPickedColors.map((color, index) => (
-              <div key={index} className="rounded-full bg-gray-200" style={{ width: '25px', height: '25px', backgroundColor: color }}></div>
-            ))}
+      <div className="container-fluid">
+        <h1 className="text-center my-4">Canvas Editor</h1>
+        <div className="row">
+          <div className="col-md-6">
+            <div className="d-flex flex-column align-items-center">
+              {/* <label htmlFor="imageUpload" className="mb-2">Upload Image :</label> */}
+              <h5>Choose the Image to be shown in the template</h5>
+              <input type="file" id="imageUpload" accept="image/*" onChange={handleImageUpload} className="mb-3" />
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Caption</span>
+                <input type="text" className="form-control" value={caption} onChange={handleCaptionChange} placeholder="Caption" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
               </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Call To Action</span>
+                <input type="text" className="form-control" value={callToAction} onChange={handleCallToActionChange} placeholder="Call to Action" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+              </div>
+              <label htmlFor="backgroundColor" className="mb-2">Background Color : </label>
+              <input type="color" id="backgroundColor" value={backgroundColor} onChange={handleBackgroundColorChange} className="mb-3" />
+              <h4>Last Picked Colors:</h4>
+              <div className="d-flex">
+                {lastPickedColors.map((color, index) => (
+                  <div key={index} className="rounded-circle bg-gray-200 mx-1" style={{ width: '30px', height: '30px', backgroundColor: color }}></div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <canvas ref={canvasRef} width={400} height={400} className="border"></canvas>
+          </div>
         </div>
       </div>
-      <center>
-        <canvas ref={canvasRef} width={400} height={400} className="border" /></center>
-    </div>
-  );
-};
+    );
+  };
 
 export default CanvasEditorApp;

@@ -13,18 +13,18 @@ class CanvasEditor {
       this.captionOptions = {
           text: 'Line 1 - 1 & 2 BHK Luxury Apartments at\nLine 2 - just Rs.34.97 Lakhs',
           position: { x: 40, y: 10 },
-          fontSize: 20, // Default font size
-          alignment: 'left', // Default alignment
-          textColor: '#ffffff', // Default text color
-          maxCharactersPerLine: 31 // Default maximum characters per line
+          fontSize: 20,
+          alignment: 'left',
+          textColor: '#ffffff',
+          maxCharactersPerLine: 31
       };
       this.ctaOptions = {
           text: '',
           position: { x: 0, y: 0 },
-          fontSize: 30, // Default font size
-          textColor: '#000000', // Default text color
-          backgroundColor: '#ffffff', // Default background color
-          wrapLength: 30 // Default wrap length
+          fontSize: 30, 
+          textColor: '#000000', 
+          backgroundColor: '#ffffff',
+          wrapLength: 30
       };
   }
 
