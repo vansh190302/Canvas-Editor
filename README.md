@@ -1,5 +1,7 @@
 # Deployed Canvas Editor
 https://canvas-editor-ten.vercel.app/
+#Video Explanation
+https://www.loom.com/share/7c51581b29884f8584a9892291b77d2b?sid=3c6bbcda-90d3-4a1a-84e6-55d671b3c1fa
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
