@@ -1,7 +1,7 @@
 # Deployed Canvas Editor
 https://canvas-editor-ten.vercel.app/
 # Video Explanation
-<div style="position: relative; padding-bottom: 63.49206349206349%; height: 0;"><iframe src="https://www.loom.com/embed/7c51581b29884f8584a9892291b77d2b?sid=4084a410-0175-4952-8fe2-6304465732dd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/7c51581b29884f8584a9892291b77d2b?sid=5345a3f8-dd96-4130-b300-0cfe9affacff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
