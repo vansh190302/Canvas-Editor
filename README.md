@@ -2,6 +2,7 @@
 https://canvas-editor-ten.vercel.app/
 # Video Explanation
 https://github.com/vansh190302/Canvas-Editor/assets/85290357/8a8332e8-da21-4008-9483-8a248ea4d9b5
+
 Hi there! In this Video, I have given a brief explanation of my project, a Canvas Editor application built using React.js and Bootstrap. This application allows users to upload images, customize captions, and add call-to-action buttons. I have demonstrated how it works, explained the code structure, and highlighted key features. The project showcases the integration of React.js with Bootstrap for a responsive web application with canvas drawing capabilities. It also emphasizes state management, event handling, and modular component design.
 # Getting Started with Create React App
 
